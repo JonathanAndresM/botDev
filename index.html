@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro - Proyecto BotDev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <div class="min-h-screen flex items-center justify-center">
+      <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md">
+        <h1 class="text-2xl font-bold mb-6 text-center">Acceso a la API de LinkedIn</h1>
+        <form name="linkedin-access" method="POST" data-netlify="true" class="space-y-4">
+          <input type="hidden" name="form-name" value="linkedin-access" />
+          <div>
+            <label class="block mb-1 font-medium">Nombre completo</label>
+            <input type="text" name="name" required class="w-full p-2 border rounded-lg" />
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Email</label>
+            <input type="email" name="email" required class="w-full p-2 border rounded-lg" />
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Nombre de la empresa</label>
+            <input type="text" name="company" required class="w-full p-2 border rounded-lg" />
+          </div>
+          <div>
+            <label class="block mb-1 font-medium">Mensaje</label>
+            <textarea name="message" rows="4" class="w-full p-2 border rounded-lg"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-lg transition">
+            Enviar solicitud
+          </button>
+        </form>
+        <p class="text-xs text-gray-500 text-center mt-4">Nos pondremos en contacto pronto.</p>
+      </div>
+    </div>
+  </body>
+</html>
